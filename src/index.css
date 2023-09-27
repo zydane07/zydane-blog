@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Quicksand";
+}
+
+.navbar-menu {
+  @apply rounded-md p-2 hover:bg-sky-700 hover:text-white;
+}
+
+.button {
+  @apply rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700;
+}
+.button-delete {
+  @apply rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700;
+}
+
+.text-header {
+  @apply my-6 text-center text-4xl font-bold text-blue-900;
+}
+
+.container-content {
+  @apply mx-auto max-w-xl;
+}
