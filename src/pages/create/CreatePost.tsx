@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Create = () => {
-  const header = "Create New Post";
+const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("select");
@@ -26,10 +25,8 @@ const Create = () => {
       navigate("/");
     });
   };
-
   return (
-    <div className="create ">
-      <h1 className="text-header">{header}</h1>
+    <>
       <form
         action="#"
         onSubmit={handleSubmit}
@@ -39,7 +36,7 @@ const Create = () => {
           Post Title:
         </label>
         <input
-          className="my-2 box-border block w-full rounded-md border px-2 py-1"
+          className="input"
           id="title"
           type="text"
           required
@@ -50,7 +47,7 @@ const Create = () => {
           Post Body:
         </label>
         <textarea
-          className="my-2 box-border block w-full rounded-md border px-2 py-1"
+          className="input"
           required
           id="body"
           value={body}
@@ -82,8 +79,8 @@ const Create = () => {
           </button>
         )}
       </form>
-    </div>
+    </>
   );
 };
 
-export default Create;
+export default CreatePost;

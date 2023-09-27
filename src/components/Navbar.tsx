@@ -12,8 +12,11 @@ const Navbar = () => {
         <Link className="navbar-menu " to="/create">
           Create Post
         </Link>
-        <Link className="navbar-menu " to="/training">
+        <Link className="navbar-menu hidden" to="/training">
           Training
+        </Link>
+        <Link className="navbar-menu bg-blue-800 text-white" to="/login">
+          Log Out
         </Link>
       </div>
     </nav>

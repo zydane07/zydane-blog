@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Error from "../components/Error";
 
 const useFecth = (url: any) => {
   const [data, setData] = useState<any | null>(null);

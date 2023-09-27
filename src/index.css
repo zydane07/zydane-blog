@@ -25,3 +25,7 @@
 .container-content {
   @apply mx-auto max-w-xl;
 }
+
+.input {
+  @apply my-2 box-border block w-full rounded-md border p-2;
+}

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFecth from "../useFecth";
 import Loading from "../../components/Loading";
+import Error from "../../components/Error";
 import { useNavigate } from "react-router-dom";
 
 const PostDetail = () => {
@@ -19,7 +20,7 @@ const PostDetail = () => {
   };
   return (
     <>
-      {error && <div>{error}</div>}
+      {error && <Error />}
       {isPending && <Loading />}
       {post && (
         <>

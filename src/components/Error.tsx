@@ -1,4 +1,4 @@
-const Error = (error: any) => {
+const Error = () => {
   return (
     <>
       <div
@@ -7,7 +7,7 @@ const Error = (error: any) => {
           height: "100vh",
         }}
       >
-        <p>{error}</p>
+        <p>Error Fecth Data</p>
       </div>
     </>
   );
